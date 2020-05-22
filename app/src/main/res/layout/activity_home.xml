@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/usernameLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp">
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:text="@string/user_name"
+        android:layout_marginStart="50dp"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editusername"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/user_name_edit"
+        android:layout_marginStart="80dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/usernameLinear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/usernameLinear">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:text="@string/password"
+            android:layout_marginStart="50dp"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/password_edit"
+            android:layout_marginStart="80dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonslayout"
+        android:layout_below="@id/usernameLinear2"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/login"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/login"
+            android:layout_marginStart="50dp"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MADmodelPaper2020</string>
+    <string name="user_name">user name :</string>
+    <string name="user_name_edit">user name</string>
+    <string name="password">Password :</string>
+    <string name="password_edit">password</string>
+    <string name="login">Login</string>
+    <string name="birthday">Birthday</string>
+    <string name="edit_birthday">birthday</string>
+    <string name="update_profile">Update profile</string>
+    <string name="female">female</string>
+    <string name="male">male</string>
+    <string name="gender">Gender</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+</resources>

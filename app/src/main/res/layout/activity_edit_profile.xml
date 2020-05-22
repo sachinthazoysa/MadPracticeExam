@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/usernameLinear"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/usernameR"
+            android:text="@string/user_name"
+            android:layout_marginStart="50dp"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/editusernameR"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_name_edit"
+            android:layout_marginStart="0dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/usernameLinear2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/usernameLinear">
+
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/birthdayR"
+            android:text="@string/birthday"
+            android:layout_marginStart="50dp"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/edithBirthdayR"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_birthday"
+            android:layout_marginStart="0dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/usernameLinear3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/usernameLinear2">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordR"
+            android:text="@string/password"
+            android:layout_marginStart="50dp"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/editPasswordR"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/password_edit"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/usernameLinear4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameLinear3"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:textSize="18sp"/>
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:layout_marginLeft="50dp"
+            />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonslayout"
+        android:layout_below="@id/usernameLinear4"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/editE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/edit"
+            tools:ignore="ButtonStyle" />
+        <Button
+            android:id="@+id/DeleteE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/delete"
+            tools:ignore="ButtonStyle"
+            android:layout_marginLeft="50dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="37dp"
+        android:text="@android:string/search_go" />
+
+
+</RelativeLayout>
+
+
