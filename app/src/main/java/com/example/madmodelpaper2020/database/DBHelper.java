@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DBHelper extends SQLiteOpenHelper {
-    public static final String DATABASE_NAME = "UserInfo.db";
+    public static final String DATABASE_NAME = "User.db";
 
     public DBHelper(@Nullable Context context) {
         super(context, DATABASE_NAME , null, 1);

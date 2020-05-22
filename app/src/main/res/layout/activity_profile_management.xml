@@ -116,46 +116,48 @@
 
 <!--    </LinearLayout>-->
 
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_below="@id/usernameLinear3"
-        android:gravity="center"
-        android:layout_marginTop="50dp"
-        android:id="@+id/radio">
+<!--    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_below="@id/usernameLinear3"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:id="@+id/radio">-->
 
-        <RadioButton android:id="@+id/male"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="male"
-            android:onClick="onRadioButtonClicked"
-           />
+<!--        <RadioButton android:id="@+id/male"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="male"-->
+<!--            android:onClick="onRadioButtonClicked"-->
+<!--           />-->
 
-        <RadioButton android:id="@+id/radio_ninjas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="female"
-            android:onClick="onRadioButtonClicked"
-            />
+<!--        <RadioButton android:id="@+id/radio_ninjas"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="female"-->
+<!--            android:onClick="onRadioButtonClicked"-->
+<!--            />-->
 
-    </RadioGroup>
+<!--    </RadioGroup>-->
 
     <LinearLayout
+        android:id="@+id/buttonslayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonslayout"
-        android:layout_below="@id/radio"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:layout_below="@id/usernameLinear3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="59dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/updateR"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
             android:text="@string/update_profile"
+            android:textAlignment="center"
             tools:ignore="ButtonStyle" />
     </LinearLayout>
 

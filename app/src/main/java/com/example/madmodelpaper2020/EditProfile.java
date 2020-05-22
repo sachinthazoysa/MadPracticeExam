@@ -10,7 +10,7 @@ import android.widget.EditText;
 import com.example.madmodelpaper2020.database.DBHelper;
 
 public class EditProfile extends AppCompatActivity {
-    Button searchBtn,updateBtn;
+    Button searchBtn,updateBtn,deleteBtn;
     DBHelper dbHelper;
     EditText userName, Password, Birth, Gender;
 
@@ -25,6 +25,7 @@ public class EditProfile extends AppCompatActivity {
         Password=findViewById(R.id.editPasswordR);
         Birth=findViewById(R.id.edithBirthdayR);
         final String gender= "female";
+        deleteBtn=findViewById(R.id.DeleteE);
 
         searchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +42,14 @@ public class EditProfile extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 dbHelper.updateInfo(name,password,birth,gender);
+            }
+        });
+
+        deleteBtn.setOnClickListener(new View.OnClickListener() {
+            String name=userName.getText().toString();
+            @Override
+            public void onClick(View v) {
+                dbHelper.deleteInfo(name);
             }
         });
     }
